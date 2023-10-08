@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 import { formatDate } from '../../helpers/formatDate';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>NEWS</h1>
@@ -12,3 +12,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
