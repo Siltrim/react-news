@@ -1,12 +1,14 @@
-import React from 'react';
-
 import styles from './styles.module.css';
 
 import { Image } from '../Image/Image';
 import { formatTimeAgo } from '../../helpers/formatTimeAgo';
-import withSkeleton from '../../helpers/hocs/withSkeleton';
+import { INews } from '../../interfaces';
 
-const NewsBanner = ({ item }) => {
+interface Props {
+  item: INews;
+}
+
+const NewsBanner = ({ item }: Props) => {
   return (
     <div className={styles.banner}>
       <Image image={item?.image} />
