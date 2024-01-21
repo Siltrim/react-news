@@ -1,4 +1,3 @@
-import { getCategories } from './../../api/apiNews';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { CategoriesApiResponse, NewsApiResponse, ParamsType } from '../../interfaces';
 import { setNews } from '../slices/newsSlice';
